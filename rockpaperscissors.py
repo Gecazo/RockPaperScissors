@@ -2,7 +2,7 @@ import random
 countD = 0 # Counter - Draw, Loose, Win
 countL = 0
 countW = 0
-l = ['k','n','b'] # Random item - rock, scissors, paper
+l = ['r','s','p'] # Random item - rock, scissors, paper
   
 def inp(): # Number of turns
     global n
@@ -19,7 +19,7 @@ def logic(x, y): # game logic
         if x == y:
             print('Draw')
             countD += 1
-        elif (x == 'k' and y == 'n') or (x == 'n' and y == 'b') or (x == 'b' and y == 'k'):
+        elif (x == 'r' and y == 's') or (x == 's' and y == 'p') or (x == 'p' and y == 'r'):
             print('Win')
             countW += 1
         else:
